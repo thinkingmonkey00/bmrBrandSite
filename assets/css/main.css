@@ -9285,5 +9285,7 @@ html {
 
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
+body {
+  background: gray; }
 
 /*# sourceMappingURL=main.css.map */
