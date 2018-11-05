@@ -2,3 +2,10 @@
 body {
     background: gray;
 }
+
+div#bmr-jumbo.container-fluid {
+    background-image: url('../img/rachel-hero.png'), $jumbo-gradient;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

@@ -9288,4 +9288,10 @@ html {
 body {
   background: gray; }
 
+div#bmr-jumbo.container-fluid {
+  background-image: url("../img/rachel-hero.png"), linear-gradient(135deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
 /*# sourceMappingURL=main.css.map */
