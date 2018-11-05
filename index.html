@@ -9,7 +9,8 @@
     <meta name="author" content="">
     <title>New page</title>
     <link rel="shortcut icon" href="favicon.ico">
-
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway|Roboto" rel="stylesheet">
     <!-- build:css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
@@ -21,11 +22,11 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="."><img  class="img-fluid" src="/assets/img/bmr-logo-darkbg.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img  class="img-fluid" src="/assets/img/bmr-logo-darkbg.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="collapse navbar-collapse" id="navbar-main">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -43,7 +44,7 @@
                     <a class="nav-link" href="">Contact</a>
                     </li>
                                         <li class="nav-item">
-                    <a class="nav-link" href="">By my book!</a>
+                    <a class="nav-link" href="">Buy my book!</a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +52,18 @@
     </nav>
 </header>
     <div id="bmr-jumbo" class="container-fluid">
+      <div class="container">
+        <h1>Baby Momma Rachel</h1>
+        <h2>Radical Nutrition Justice</h2>
+      </div>
 
     </div>
 
     <!-- build:js -->
     <script src="assets/js/main.js"></script>
      <!-- endbuild -->
-
-     <script>
-
-         $(document).ready(function() {
+     <script type="text/javascript">
+        $(document).ready(function() {
   // executes when HTML-Document is loaded and DOM is ready
 
 
@@ -75,6 +78,7 @@
       $(".navbar").removeClass("bg-dark");
     }
   });
+
   // If Mobile, add background color when toggler is clicked
   $(".navbar-toggler").click(function() {
     if (!$(".navbar-collapse").hasClass("show")) {
@@ -90,9 +94,7 @@
 
   // document ready
 });
-
      </script>
-
   </body>
 
 </html>
