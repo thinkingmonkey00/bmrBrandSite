@@ -14,3 +14,15 @@ $sacramento: 'Sacramento', cursive;
 // Asset paths
 $path-image   :   '../img';
 $path-fonts     :  '../fonts';
+
+// Theme colors
+$theme-colors: map-merge (
+  "primary":    $mandy,
+  "secondary":  $cannon-pink,
+  "success":    $asparagus,
+  "info":       $sushi-green,
+  "warning":    $tree-poppy,
+  "danger":     $pomegranate,
+  "light":      $green-white,
+  "dark":       $martinique
+);

@@ -24,11 +24,11 @@ div#bmr-jumbo.container-fluid {
       }
       h1 {
         font-family: $permanent-marker;
-        color: $white;
+        color: $light;
       }
       h2 {
         font-family: $raleway;
-        color: $white;
+        color: $light;
         span {
           font-family: $sacramento;
           white-space: nowrap;
@@ -41,7 +41,7 @@ div#bmr-jumbo.container-fluid {
       h3 {
         font-family: $roboto;
         text-transform: uppercase;
-        color: $success;
+        color: $info;
       }
     }
 }

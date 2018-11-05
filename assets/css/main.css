@@ -9436,7 +9436,7 @@ html {
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
 body {
-  background: #f8f9fa; }
+  background: #EBEEE4; }
 
 div#bmr-jumbo.container-fluid {
   background-image: url("../img/rachel-hero.png"), linear-gradient(135deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
@@ -9459,10 +9459,10 @@ div#bmr-jumbo.container-fluid {
         bottom: 5rem; } }
     div#bmr-jumbo.container-fluid div.container h1 {
       font-family: "Permanent Marker", cursive;
-      color: #fff; }
+      color: #EBEEE4; }
     div#bmr-jumbo.container-fluid div.container h2 {
       font-family: "Raleway", sans-serif;
-      color: #fff; }
+      color: #EBEEE4; }
       div#bmr-jumbo.container-fluid div.container h2 span {
         font-family: "Sacramento", cursive;
         white-space: nowrap;
@@ -9472,7 +9472,7 @@ div#bmr-jumbo.container-fluid {
     div#bmr-jumbo.container-fluid div.container h3 {
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
-      color: #28a745; }
+      color: #8DAC3F; }
 
 div#book-sales.container-fluid {
   background-color: rgba(0, 0, 63, 0.5); }
@@ -9484,10 +9484,10 @@ div#book-sales.container-fluid {
       div#book-sales.container-fluid .row .col-7 h2 {
         font-family: "Raleway", sans-serif;
         font-size: 3rem;
-        color: #f8f9fa; }
+        color: #EBEEE4; }
       div#book-sales.container-fluid .row .col-7 p {
         font-family: "Permanent Marker", cursive;
-        color: #17a2b8; }
+        color: #8DAC3F; }
       div#book-sales.container-fluid .row .col-7 div#fruit-line {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -9496,8 +9496,8 @@ div#book-sales.container-fluid {
           max-height: 3rem; }
     div#book-sales.container-fluid .row .col-5 img.img-fluid {
       max-height: 85vh;
-      -webkit-filter: drop-shadow(5px 5px 2px #343a40);
-              filter: drop-shadow(5px 5px 2px #343a40);
+      -webkit-filter: drop-shadow(5px 5px 2px #382d51);
+              filter: drop-shadow(5px 5px 2px #382d51);
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: start; }
