@@ -73,17 +73,28 @@
 // $light:         $gray-100 !default;
 // $dark:          $gray-800 !default;
 //
-// $theme-colors: () !default;
-// $theme-colors: map-merge((
-//   "primary":    $primary,
-//   "secondary":  $secondary,
-//   "success":    $success,
-//   "info":       $info,
-//   "warning":    $warning,
-//   "danger":     $danger,
-//   "light":      $light,
-//   "dark":       $dark
-// ), $theme-colors);
+  $mandy:         #eb656d;
+  $martinique:    #382d51;
+  $asparagus:     #7c9959;
+  $tree-poppy:    #f98921;
+  $pomegranate:   #f44336;
+  $cannon-pink:   #7D4475;
+  $green-white:   #EBEEE4;
+  $sushi:         #8DAC3F;
+
+
+
+   $theme-colors: () !default;
+   $theme-colors: map-merge((
+     "primary":    $mandy,
+     "secondary":  $cannon-pink,
+     "success":    $asparagus,
+     "info":       $sushi,
+     "warning":    $tree-poppy,
+     "danger":     $pomegranate,
+     "light":      $green-white,
+     "dark":       $martinique
+   ), $theme-colors);
 // // stylelint-enable
 //
 //  Set a specific jump point for requesting color jumps

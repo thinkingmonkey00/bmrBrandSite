@@ -1,6 +1,6 @@
 /* Base Styles -------------------- */
 body {
-    background: gray;
+    background: $light;
 }
 
 div#bmr-jumbo.container-fluid {
@@ -29,6 +29,52 @@ div#bmr-jumbo.container-fluid {
       h2 {
         font-family: $raleway;
         color: $white;
+        span {
+          font-family: $sacramento;
+          white-space: nowrap;
+          font-size: 2rem;
+        }
+        button.btn.btn-info {
+            margin-left: 1rem;
+          }
+      }
+      h3 {
+        font-family: $roboto;
+        text-transform: uppercase;
+        color: $success;
       }
     }
+}
+
+div#book-sales.container-fluid {
+  background-color: rgba(0, 0, 63, 0.5);
+  .row {
+    padding: 1rem 0;
+    .col-7 {
+      text-align: center;
+      padding: 10rem 0;
+      h2 {
+        font-family: $raleway;
+        font-size: 3rem;
+        color: $light;
+      }
+      p {
+        font-family: $permanent-marker;
+        color: $info;
+      }
+      div#fruit-line {
+        justify-content: center;
+        img.img-fluid {
+          max-height: 3rem;
+        }
+      }
+    }
+    .col-5 {
+      img.img-fluid {
+        max-height: 85vh;
+        filter: drop-shadow(5px 5px 2px $dark);
+        justify-content: start;
+      }
+    }
+  }
 }
