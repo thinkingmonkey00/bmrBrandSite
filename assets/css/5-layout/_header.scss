@@ -1,0 +1,24 @@
+.scroll {
+  background-color: $dark !important;
+  transition: all 2s ease-in-out .25s;
+
+}
+
+
+#navbar {
+  background-color: rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: all 2s ease-in-out .25s;
+    a.navbar-brand {
+    max-width: 75%;
+  }
+  ul li a {
+    color: $light;
+    text-transform: uppercase;
+  }
+
+}

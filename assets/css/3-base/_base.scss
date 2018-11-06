@@ -3,32 +3,6 @@ body {
     background: $light;
 }
 
-.scroll {
-  background: $dark !important;
-  position: fixed;
-  height: 2rem;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  transition: all 2s ease-in-out .5s;
-}
-
-#navbar {
-  background: transparent;
-  position: fixed;
-  height: 4rem;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  transition: all 2s ease-in-out .5s;
-    a.navbar-brand {
-    max-width: 75%;
-  }
-}
-
-
 div#bmr-jumbo.container-fluid {
     background-image: url('../img/rachel-hero.png'), $jumbo-gradient;
     background-repeat: no-repeat;

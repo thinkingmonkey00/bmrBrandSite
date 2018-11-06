@@ -9438,28 +9438,6 @@ html {
 body {
   background: #EBEEE4; }
 
-.scroll {
-  background: #382d51 !important;
-  position: fixed;
-  height: 2rem;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  -webkit-transition: all 2s ease-in-out .5s;
-  transition: all 2s ease-in-out .5s; }
-
-#navbar {
-  background: transparent;
-  position: fixed;
-  height: 4rem;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-  #navbar a.navbar-brand {
-    max-width: 75%; }
-
 div#bmr-jumbo.container-fluid {
   background-image: url("../img/rachel-hero.png"), linear-gradient(160deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
   background-repeat: no-repeat;
@@ -9629,5 +9607,25 @@ div#about {
     line-height: 2rem; }
   div#about div#collapseAbout {
     line-height: 2rem; }
+
+.scroll {
+  background-color: #382d51 !important;
+  -webkit-transition: all 2s ease-in-out .25s;
+  transition: all 2s ease-in-out .25s; }
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transition: all 2s ease-in-out .25s;
+  transition: all 2s ease-in-out .25s; }
+  #navbar a.navbar-brand {
+    max-width: 75%; }
+  #navbar ul li a {
+    color: #EBEEE4;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
