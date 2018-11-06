@@ -3,6 +3,32 @@ body {
     background: $light;
 }
 
+.scroll {
+  background: $dark !important;
+  position: fixed;
+  height: 2rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: all 2s ease-in-out .5s;
+}
+
+#navbar {
+  background: transparent;
+  position: fixed;
+  height: 4rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: all 2s ease-in-out .5s;
+    a.navbar-brand {
+    max-width: 75%;
+  }
+}
+
+
 div#bmr-jumbo.container-fluid {
     background-image: url('../img/rachel-hero.png'), $jumbo-gradient;
     background-repeat: no-repeat;
@@ -125,5 +151,18 @@ div.container-fluid.bg-warning.row {
     h2 {
       text-decoration: underline;
     }
+  }
+}
+
+div#about {
+  background-image: linear-gradient(to right bottom, #733988, #0a68bc, #008ec8, #00acaf, #4dc288);
+  h2 {
+    letter-spacing: .1rem;
+  }
+  p.lead {
+    line-height: 2rem;
+  }
+  div#collapseAbout {
+    line-height: 2rem;
   }
 }
