@@ -1,9 +1,18 @@
 //Custom variables
+$cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 // Descriptive color variables
-$jumbo-gradient: linear-gradient( 135deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
+$jumbo-gradient: linear-gradient( 160deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
 
 // Functional color variables
+  $mandy:         #eb656d;
+  $martinique:    #382d51;
+  $asparagus:     #7c9959;
+  $tree-poppy:    #f98921;
+  $pomegranate:   #f44336;
+  $cannon-pink:   #7D4475;
+  $green-white:   #EBEEE4;
+  $sushi-green:   #8DAC3F;
 
 // Font stacks
 $permanent-marker: 'Permanent Marker', cursive;

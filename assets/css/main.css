@@ -9439,7 +9439,7 @@ body {
   background: #EBEEE4; }
 
 div#bmr-jumbo.container-fluid {
-  background-image: url("../img/rachel-hero.png"), linear-gradient(135deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
+  background-image: url("../img/rachel-hero.png"), linear-gradient(160deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -9459,45 +9459,143 @@ div#bmr-jumbo.container-fluid {
         bottom: 5rem; } }
     div#bmr-jumbo.container-fluid div.container h1 {
       font-family: "Permanent Marker", cursive;
-      color: #EBEEE4; }
+      color: #EBEEE4;
+      font-size: 3.5rem; }
     div#bmr-jumbo.container-fluid div.container h2 {
       font-family: "Raleway", sans-serif;
-      color: #EBEEE4; }
+      color: #8DAC3F;
+      text-shadow: 1px 1px #382d51; }
       div#bmr-jumbo.container-fluid div.container h2 span {
         font-family: "Sacramento", cursive;
         white-space: nowrap;
         font-size: 2rem; }
-      div#bmr-jumbo.container-fluid div.container h2 button.btn.btn-info {
+      div#bmr-jumbo.container-fluid div.container h2 button.btn {
         margin-left: 1rem; }
     div#bmr-jumbo.container-fluid div.container h3 {
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
-      color: #8DAC3F; }
+      color: #EBEEE4;
+      text-shadow: 2px 2px #382d51; }
 
-div#book-sales.container-fluid {
-  background-color: rgba(0, 0, 63, 0.5); }
-  div#book-sales.container-fluid #book-sales-header {
-    padding: 1rem 0;
-    text-align: center; }
-    div#book-sales.container-fluid #book-sales-header h2 {
-      font-family: "Raleway", sans-serif;
-      font-size: 3rem;
-      color: #EBEEE4; }
-    div#book-sales.container-fluid #book-sales-header p {
-      font-family: "Permanent Marker", cursive;
-      color: #8DAC3F; }
-    div#book-sales.container-fluid #book-sales-header #fruit-line {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      div#book-sales.container-fluid #book-sales-header #fruit-line img.img-fluid {
-        max-height: 3rem; }
-    div#book-sales.container-fluid #book-sales-header .col-5 img.img-fluid {
-      max-height: 85vh;
-      -webkit-filter: drop-shadow(5px 5px 2px #382d51);
-              filter: drop-shadow(5px 5px 2px #382d51);
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: start; }
+div#book-sales.container-fluid #book-sales-header {
+  padding: 1rem 0;
+  text-align: center; }
+  div#book-sales.container-fluid #book-sales-header h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    color: #382d51; }
+    div#book-sales.container-fluid #book-sales-header h2 span#mfs-title {
+      white-space: nowrap; }
+  div#book-sales.container-fluid #book-sales-header p.h2 {
+    font-family: "Permanent Marker", cursive;
+    color: #8DAC3F; }
+  div#book-sales.container-fluid #book-sales-header #fruit-line {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    div#book-sales.container-fluid #book-sales-header #fruit-line img.img-fluid {
+      max-height: 3rem; }
+  div#book-sales.container-fluid #book-sales-header p.h4 {
+    padding-bottom: 1rem; }
+
+div#book-sales.container-fluid img.img-fluid {
+  max-height: 85vh;
+  -webkit-filter: drop-shadow(5px 5px 2px #382d51);
+          filter: drop-shadow(5px 5px 2px #382d51);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+
+div#book-sales.container-fluid div#cta-book-btn.container {
+  width: auto;
+  padding-bottom: 2rem; }
+  div#book-sales.container-fluid div#cta-book-btn.container a {
+    text-decoration: none;
+    font-weight: 700; }
+    div#book-sales.container-fluid div#cta-book-btn.container a span {
+      -webkit-text-decoration: underline #8DAC3F;
+              text-decoration: underline #8DAC3F; }
+
+@-webkit-keyframes top {
+  from {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0); }
+  to {
+    -webkit-transform: translate(0rem, 3.5rem);
+            transform: translate(0rem, 3.5rem); } }
+
+@keyframes top {
+  from {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0); }
+  to {
+    -webkit-transform: translate(0rem, 3.5rem);
+            transform: translate(0rem, 3.5rem); } }
+
+@-webkit-keyframes bottom {
+  from {
+    -webkit-transform: translate(-11.5rem, 0);
+            transform: translate(-11.5rem, 0); }
+  to {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0); } }
+
+@keyframes bottom {
+  from {
+    -webkit-transform: translate(-11.5rem, 0);
+            transform: translate(-11.5rem, 0); }
+  to {
+    -webkit-transform: translate(0rem, 0);
+            transform: translate(0rem, 0); } }
+  div#book-sales.container-fluid div#cta-book-btn.container .btn {
+    position: relative;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: solid;
+    font-size: 28px;
+    color: #f44336;
+    font-family: "Raleway", sans-serif;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s; }
+    div#book-sales.container-fluid div#cta-book-btn.container .btn::after, div#book-sales.container-fluid div#cta-book-btn.container .btn::before {
+      content: "";
+      position: absolute;
+      height: 25%;
+      width: 10%;
+      -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 2;
+      border-radius: 50%; }
+    div#book-sales.container-fluid div#cta-book-btn.container .btn::before {
+      background-color: #8DAC3F;
+      top: 1rem;
+      left: -1.25rem;
+      -webkit-animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+              animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate; }
+    div#book-sales.container-fluid div#cta-book-btn.container .btn::after {
+      background-color: #7D4475;
+      top: 6.5rem;
+      left: 13rem;
+      -webkit-animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+              animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate; }
+    div#book-sales.container-fluid div#cta-book-btn.container .btn:hover {
+      color: white; }
+      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::before, div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::after {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        -webkit-animation: none;
+                animation: none; }
+      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::after {
+        left: 0rem; }
+      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::before {
+        top: 0.5rem;
+        left: 0.35rem; }
+
+div.container-fluid.bg-warning.row div.col-md-7 h2 {
+  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

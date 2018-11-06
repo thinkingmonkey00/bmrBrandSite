@@ -25,38 +25,47 @@ div#bmr-jumbo.container-fluid {
       h1 {
         font-family: $permanent-marker;
         color: $light;
+        font-size: 3.5rem;
+        //text-shadow: 2px 2px $light;
       }
       h2 {
         font-family: $raleway;
-        color: $light;
+        color: $info;
+        text-shadow: 1px 1px $dark;
         span {
           font-family: $sacramento;
           white-space: nowrap;
           font-size: 2rem;
         }
-        button.btn.btn-info {
+        button.btn {
             margin-left: 1rem;
           }
       }
       h3 {
         font-family: $roboto;
         text-transform: uppercase;
-        color: $info;
-      }
+        color: $light;
+        text-shadow: 2px 2px $dark;
+              }
     }
 }
 
+//book sales
 div#book-sales.container-fluid {
-  background-color: rgba(0, 0, 63, 0.5);
+  //background-color: rgba(0, 0, 63, 0.5);
+
   #book-sales-header {
     padding: 1rem 0;
     text-align: center;
       h2 {
         font-family: $raleway;
-        font-size: 3rem;
-        color: $light;
+        font-size: 2.5rem;
+        color: $dark;
+        span#mfs-title {
+          white-space: nowrap;
+        }
       }
-      p {
+      p.h2 {
         font-family: $permanent-marker;
         color: $info;
       }
@@ -66,12 +75,55 @@ div#book-sales.container-fluid {
           max-height: 3rem;
         }
       }
-    .col-5 {
+      p.h4 {
+        padding-bottom: 1rem;
+      }
+  }
+
       img.img-fluid {
         max-height: 85vh;
         filter: drop-shadow(5px 5px 2px $dark);
         justify-content: start;
       }
+
+    div#cta-book-btn.container {
+	    width: auto;
+      padding-bottom: 2rem;
+
+
+a {
+	//text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+  span {
+    text-decoration: underline $info
+  }
+}
+@keyframes top{
+	from{
+		transform: translate(0rem, 0);
+	}
+	to {
+		transform: translate(0rem, 3.5rem);
+	}
+}
+@keyframes bottom{
+	from{
+		transform: translate(-11.5rem, 0);
+	}
+	to{
+		transform: translate(0rem, 0);
+	}
+}
+
+@include btn__split($secondary, $info, $danger);
+  }
+}
+
+div.container-fluid.bg-warning.row {
+  div.col-md-7 {
+    h2 {
+      text-decoration: underline;
     }
   }
 }
