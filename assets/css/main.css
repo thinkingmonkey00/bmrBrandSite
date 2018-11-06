@@ -9476,25 +9476,23 @@ div#bmr-jumbo.container-fluid {
 
 div#book-sales.container-fluid {
   background-color: rgba(0, 0, 63, 0.5); }
-  div#book-sales.container-fluid .row {
-    padding: 1rem 0; }
-    div#book-sales.container-fluid .row .col-7 {
-      text-align: center;
-      padding: 10rem 0; }
-      div#book-sales.container-fluid .row .col-7 h2 {
-        font-family: "Raleway", sans-serif;
-        font-size: 3rem;
-        color: #EBEEE4; }
-      div#book-sales.container-fluid .row .col-7 p {
-        font-family: "Permanent Marker", cursive;
-        color: #8DAC3F; }
-      div#book-sales.container-fluid .row .col-7 div#fruit-line {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        div#book-sales.container-fluid .row .col-7 div#fruit-line img.img-fluid {
-          max-height: 3rem; }
-    div#book-sales.container-fluid .row .col-5 img.img-fluid {
+  div#book-sales.container-fluid #book-sales-header {
+    padding: 1rem 0;
+    text-align: center; }
+    div#book-sales.container-fluid #book-sales-header h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 3rem;
+      color: #EBEEE4; }
+    div#book-sales.container-fluid #book-sales-header p {
+      font-family: "Permanent Marker", cursive;
+      color: #8DAC3F; }
+    div#book-sales.container-fluid #book-sales-header #fruit-line {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      div#book-sales.container-fluid #book-sales-header #fruit-line img.img-fluid {
+        max-height: 3rem; }
+    div#book-sales.container-fluid #book-sales-header .col-5 img.img-fluid {
       max-height: 85vh;
       -webkit-filter: drop-shadow(5px 5px 2px #382d51);
               filter: drop-shadow(5px 5px 2px #382d51);

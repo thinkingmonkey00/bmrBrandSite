@@ -48,11 +48,9 @@ div#bmr-jumbo.container-fluid {
 
 div#book-sales.container-fluid {
   background-color: rgba(0, 0, 63, 0.5);
-  .row {
+  #book-sales-header {
     padding: 1rem 0;
-    .col-7 {
-      text-align: center;
-      padding: 10rem 0;
+    text-align: center;
       h2 {
         font-family: $raleway;
         font-size: 3rem;
@@ -62,13 +60,12 @@ div#book-sales.container-fluid {
         font-family: $permanent-marker;
         color: $info;
       }
-      div#fruit-line {
+      #fruit-line {
         justify-content: center;
         img.img-fluid {
           max-height: 3rem;
         }
       }
-    }
     .col-5 {
       img.img-fluid {
         max-height: 85vh;
