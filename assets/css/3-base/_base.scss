@@ -176,6 +176,7 @@ div#ig-feed.container-fluid {
     right: 0;
     left: 0;
     p {
+      padding-bottom: 1rem;
       font-variant: small-caps;
       font-size: 1.5rem;
       span {
@@ -183,10 +184,27 @@ div#ig-feed.container-fluid {
         color: $primary;
         font-variant: none;
         font-size: 2rem;
+        line-height: 2rem;
       }
     }
     img.img-fluid {
       max-height: 5rem;
     }
   }
+}
+
+// Press info
+div#press {
+  background-color: $dark;
+  span.d-block {
+    color: $info;
+    font-variant: small-caps;
+  }
+  h2.h1 {
+    color: $light;
+    font-family: $permanent-marker;
+  }
+  span.line {
+  display: inline-block;
+}
 }
