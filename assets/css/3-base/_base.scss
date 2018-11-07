@@ -128,6 +128,16 @@ div.container-fluid.bg-warning.row {
   }
 }
 
+div#events.container-fluid.py-2 {
+  h3.text-center {
+    color: $secondary;
+    text-align: center;
+    span#event-emphasis {
+      color: $info;
+    }
+  }
+}
+
 div#about {
   background-image: linear-gradient(to right bottom, #733988, #0a68bc, #008ec8, #00acaf, #4dc288);
   h2 {
