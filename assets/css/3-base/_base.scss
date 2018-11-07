@@ -120,23 +120,39 @@ a {
   }
 }
 
-div.container-fluid.bg-warning.row {
-  div.col-md-7 {
-    h2 {
-      text-decoration: underline;
-    }
+div#email-capture {
+  h2.h1 {
+    text-decoration: underline $info;
+    font-family: $raleway;
   }
+input[type="email"].email::placeholder {
+  color: $light;
+  font-family: $permanent-marker;
+  font-size: 1.5rem;
+}
+button[type="submit"]#mc-embedded-subscribe {
+  font-family: $permanent-marker;
+  color: $info;
+}
 }
 
-div#events.container-fluid.py-2 {
-  h3.text-center {
-    color: $secondary;
-    text-align: center;
-    span#event-emphasis {
+div#events {
+  text-align: center;
+  h3 {
+    font-family: $raleway;
+        span#event-emphasis {
+      font-family: $permanent-marker;
       color: $info;
     }
   }
+      p {
+      font-family: $sacramento;
+      font-size: 1.70rem;
+      color: $secondary;
+    }
 }
+
+
 
 div#about {
   background-image: linear-gradient(to right bottom, #733988, #0a68bc, #008ec8, #00acaf, #4dc288);
@@ -148,5 +164,16 @@ div#about {
   }
   div#collapseAbout {
     line-height: 2rem;
+  }
+}
+
+div#ig-feed.container-fluid {
+  position: relative;
+  div.container.bg-light {
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }

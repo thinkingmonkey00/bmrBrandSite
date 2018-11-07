@@ -9595,14 +9595,41 @@ div#book-sales.container-fluid div#cta-book-btn.container {
         top: 0.5rem;
         left: 0.35rem; }
 
-div.container-fluid.bg-warning.row div.col-md-7 h2 {
-  text-decoration: underline; }
+div#email-capture h2.h1 {
+  -webkit-text-decoration: underline #8DAC3F;
+          text-decoration: underline #8DAC3F;
+  font-family: "Raleway", sans-serif; }
 
-div#events.container-fluid.py-2 h3.text-center {
-  color: #7D4475;
+div#email-capture input[type="email"].email::-webkit-input-placeholder {
+  color: #EBEEE4;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem; }
+
+div#email-capture input[type="email"].email::-ms-input-placeholder {
+  color: #EBEEE4;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem; }
+
+div#email-capture input[type="email"].email::placeholder {
+  color: #EBEEE4;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem; }
+
+div#email-capture button[type="submit"]#mc-embedded-subscribe {
+  font-family: "Permanent Marker", cursive;
+  color: #8DAC3F; }
+
+div#events {
   text-align: center; }
-  div#events.container-fluid.py-2 h3.text-center span#event-emphasis {
-    color: #8DAC3F; }
+  div#events h3 {
+    font-family: "Raleway", sans-serif; }
+    div#events h3 span#event-emphasis {
+      font-family: "Permanent Marker", cursive;
+      color: #8DAC3F; }
+  div#events p {
+    font-family: "Sacramento", cursive;
+    font-size: 1.70rem;
+    color: #7D4475; }
 
 div#about {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#733988), color-stop(#0a68bc), color-stop(#008ec8), color-stop(#00acaf), to(#4dc288));
@@ -9613,6 +9640,15 @@ div#about {
     line-height: 2rem; }
   div#about div#collapseAbout {
     line-height: 2rem; }
+
+div#ig-feed.container-fluid {
+  position: relative; }
+  div#ig-feed.container-fluid div.container.bg-light {
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; }
 
 .scroll {
   background-color: #382d51 !important;
