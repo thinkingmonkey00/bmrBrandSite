@@ -175,5 +175,18 @@ div#ig-feed.container-fluid {
     bottom: 0;
     right: 0;
     left: 0;
+    p {
+      font-variant: small-caps;
+      font-size: 1.5rem;
+      span {
+        font-family: $sacramento;
+        color: $primary;
+        font-variant: none;
+        font-size: 2rem;
+      }
+    }
+    img.img-fluid {
+      max-height: 5rem;
+    }
   }
 }

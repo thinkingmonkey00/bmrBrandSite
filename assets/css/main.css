@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url(fancybox/jquery.fancybox.min.css);
 *,
 *::before,
 *::after {
@@ -9649,6 +9650,16 @@ div#ig-feed.container-fluid {
     bottom: 0;
     right: 0;
     left: 0; }
+    div#ig-feed.container-fluid div.container.bg-light p {
+      font-variant: small-caps;
+      font-size: 1.5rem; }
+      div#ig-feed.container-fluid div.container.bg-light p span {
+        font-family: "Sacramento", cursive;
+        color: #eb656d;
+        font-variant: none;
+        font-size: 2rem; }
+    div#ig-feed.container-fluid div.container.bg-light img.img-fluid {
+      max-height: 5rem; }
 
 .scroll {
   background-color: #382d51 !important;
