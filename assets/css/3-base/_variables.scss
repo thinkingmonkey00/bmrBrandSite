@@ -4,6 +4,8 @@ $cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 // Descriptive color variables
 $jumbo-gradient: linear-gradient( 160deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
 
+$footer-gradient: linear-gradient(to bottom, $dark, $secondary, $primary, $warning);
+
 // Functional color variables
   $mandy:         #eb656d;
   $martinique:    #382d51;

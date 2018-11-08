@@ -207,4 +207,29 @@ div#press {
   span.line {
   display: inline-block;
 }
+div#partnerships {
+  h4.h2 {
+    padding: 2rem 0;
+    font-family: $raleway;
+    font-variant: small-caps;
+    span {
+      font-family: $permanent-marker;
+      font-variant: none;
+      color: $success;
+      text-decoration: underline;
+    }
+  }
+  div.main-slider {
+    padding-bottom: 5rem;
+  }
+}
+}
+
+footer#contact {
+  background-color: $dark;
+  color: $light;
+  background-image: $footer-gradient;
+ h4.h5 {
+    text-align: right;
+  }
 }

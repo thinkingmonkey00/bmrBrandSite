@@ -17,7 +17,11 @@ gulp.task("concatScripts", function() {
         'assets/js/vendor/jquery.min.js',
         'assets/js/vendor/popper.min.js',
         'assets/js/vendor/bootstrap.min.js',
-        'assets/js/vendor/jquery.fancybox.min.js'
+        'assets/js/vendor/jquery.fancybox.min.js',
+        'assets/js/vendor/slick.js',
+        //'assets/js/custom/on-scroll.js',
+        'assets/js/custom/events-calendar.js',
+        'assets/js/custom/fancybox-slick.js'
         ])
     .pipe(maps.init())
     .pipe(concat('main.js'))
@@ -78,7 +82,7 @@ gulp.task('renameSources', function() {
 
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
   return gulp.src(['*.html', '*.php','*.css','favicon.ico',
-                   "assets/img/**","assets/css/theme.css","assets/js/theme.js","assets/fonts/**"], { base: './'})
+                   "assets/img/**","assets/fonts/**"], { base: './'})
             .pipe(gulp.dest('docs'));
 });
 
