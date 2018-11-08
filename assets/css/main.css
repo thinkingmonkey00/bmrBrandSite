@@ -10496,7 +10496,9 @@ footer#contact {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#382d51), color-stop(#7D4475), color-stop(#eb656d), to(#f98921));
   background-image: linear-gradient(to bottom, #382d51, #7D4475, #eb656d, #f98921); }
   footer#contact h4.h5 {
-    text-align: right; }
+    text-align: right;
+    -ms-flex-line-pack: right;
+        align-content: right; }
 
 .scroll {
   background-color: #382d51 !important;
