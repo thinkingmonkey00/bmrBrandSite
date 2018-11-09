@@ -1,15 +1,12 @@
-//ES5
-'use strict';
+$(function() {
+    var navbar = $(".navbar");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-window.onscroll = function () {
-    var nav = document.querySelector('#navbar');
-    if (undefined.scrollY <= 10) nav.className = '';else nav.className = 'scroll';
-};
-
-
-
-//ES6
-    //window.onscroll = () => {
-  //const nav = document.querySelector('#navbar');
-  //if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
-//};
+        if (scroll >= 200) {
+            navbar.addClass("scroll");
+        } else {
+            navbar.removeClass("scroll");
+        }
+    });
+});

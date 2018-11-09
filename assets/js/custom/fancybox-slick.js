@@ -9,7 +9,7 @@ $().fancybox({
 
 // Init Slick
 $(".main-slider").slick({
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -17,9 +17,9 @@ $(".main-slider").slick({
   swipeToSlide: true,
   arrows: false,
   responsive: [{
-    breakpoint: 350,
+    breakpoint: 475,
     settings: {
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1
     }
   }]

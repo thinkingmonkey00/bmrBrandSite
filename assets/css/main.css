@@ -10263,6 +10263,10 @@ div#bmr-jumbo.container-fluid {
       div#bmr-jumbo.container-fluid div.container {
         right: 5rem;
         bottom: 5rem; } }
+    @media (min-width: 992px) {
+      div#bmr-jumbo.container-fluid div.container {
+        right: 10rem;
+        bottom: 15rem; } }
     div#bmr-jumbo.container-fluid div.container h1 {
       font-family: "Permanent Marker", cursive;
       color: #EBEEE4;
@@ -10466,7 +10470,7 @@ div#ig-feed.container-fluid {
         font-size: 2rem;
         line-height: 2rem; }
     div#ig-feed.container-fluid div.container.bg-light img.img-fluid {
-      max-height: 5rem; }
+      max-height: 4rem; }
 
 div#press {
   background-color: #382d51; }
@@ -10495,10 +10499,242 @@ footer#contact {
   color: #EBEEE4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#382d51), color-stop(#7D4475), color-stop(#eb656d), to(#f98921));
   background-image: linear-gradient(to bottom, #382d51, #7D4475, #eb656d, #f98921); }
-  footer#contact h4.h5 {
+  footer#contact h1 {
     text-align: right;
-    -ms-flex-line-pack: right;
-        align-content: right; }
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-family: "Permanent Marker", cursive; }
+    @media (min-width: 768px) {
+      footer#contact h1 {
+        text-align: left; } }
+  footer#contact div.d-flex.flex-row a img.img-fluid {
+    height: 2rem;
+    padding: 0 .125rem; }
+  footer#contact h2.h1.text-light {
+    font-family: "Raleway", sans-serif; }
+  footer#contact .callback {
+    width: 450px;
+    padding: 10px; }
+  footer#contact input {
+    margin-bottom: 5px;
+    width: 100%; }
+  footer#contact .bot {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 10px; }
+    footer#contact .bot p {
+      color: rgba(0, 0, 0, 0.4);
+      border: 0px solid rgba(255, 255, 255, 0.5);
+      background: #fff;
+      overflow: hidden;
+      display: inline-block;
+      width: 140px;
+      height: 32px;
+      white-space: nowrap;
+      text-align: left;
+      border-radius: 20px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      cursor: pointer; }
+    footer#contact .bot .fa {
+      font-size: 32px;
+      vertical-align: middle;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      color: rgba(0, 0, 0, 0.4);
+      background-color: #fff;
+      margin-left: 3px;
+      line-height: 32px; }
+    footer#contact .bot span {
+      padding-left: 10px;
+      font-size: 12px;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      line-height: 32px; }
+    footer#contact .bot:hover p {
+      color: rgba(0, 0, 0, 0.7); }
+    footer#contact .bot:hover .fa {
+      color: rgba(0, 0, 0, 0.7);
+      background-color: #fff; }
+    footer#contact .bot .fa-check-circle {
+      color: rgba(0, 0, 0, 0.7);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    footer#contact .bot .chk {
+      height: 32px;
+      width: 32px;
+      background: transparent;
+      border: none; }
+      footer#contact .bot .chk .fa {
+        margin: auto;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        vertical-align: middle;
+        background: transparent; }
+  footer#contact .shake {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: 400ms;
+            animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: none;
+            transform: none; }
+  12.5% {
+    -webkit-transform: translateX(-6px) rotateY(-5deg);
+            transform: translateX(-6px) rotateY(-5deg); }
+  37.5% {
+    -webkit-transform: translateX(5px) rotateY(4deg);
+            transform: translateX(5px) rotateY(4deg); }
+  62.5% {
+    -webkit-transform: translateX(-3px) rotateY(-3deg);
+            transform: translateX(-3px) rotateY(-3deg); }
+  87.5% {
+    -webkit-transform: translateX(2px) rotateY(2deg);
+            transform: translateX(2px) rotateY(2deg); }
+  100% {
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: none;
+            transform: none; }
+  12.5% {
+    -webkit-transform: translateX(-6px) rotateY(-5deg);
+            transform: translateX(-6px) rotateY(-5deg); }
+  37.5% {
+    -webkit-transform: translateX(5px) rotateY(4deg);
+            transform: translateX(5px) rotateY(4deg); }
+  62.5% {
+    -webkit-transform: translateX(-3px) rotateY(-3deg);
+            transform: translateX(-3px) rotateY(-3deg); }
+  87.5% {
+    -webkit-transform: translateX(2px) rotateY(2deg);
+            transform: translateX(2px) rotateY(2deg); }
+  100% {
+    -webkit-transform: none;
+            transform: none; } }
+  footer#contact .alert {
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 14px;
+    font-family: "Tahoma", sans-serif;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    white-space: nowrap;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s; }
+    footer#contact .alert.hidden {
+      display: none !important; }
+  footer#contact .alert-warning, footer#contact .alert-danger {
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 14px;
+    font-family: "Tahoma", sans-serif;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    white-space: nowrap;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s; }
+
+@-webkit-keyframes pulse {
+  0% {
+    color: rgba(0, 0, 0, 0.4); }
+  25% {
+    color: rgba(0, 0, 0, 0.9); }
+  50% {
+    color: rgba(0, 0, 0, 0.9); }
+  100% {
+    color: rgba(0, 0, 0, 0.4); } }
+
+@keyframes pulse {
+  0% {
+    color: rgba(0, 0, 0, 0.4); }
+  25% {
+    color: rgba(0, 0, 0, 0.9); }
+  50% {
+    color: rgba(0, 0, 0, 0.9); }
+  100% {
+    color: rgba(0, 0, 0, 0.4); } }
+  footer#contact .success {
+    display: none; }
+  footer#contact .button {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 44px;
+    cursor: pointer;
+    margin: auto;
+    background: #cc181b;
+    border-radius: 4px;
+    border-color: #cc181b;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    outline: none; }
+    footer#contact .button:hover {
+      cursor: pointer; }
+    footer#contact .button:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 92%;
+      height: 10%;
+      border-radius: 50%;
+      background-color: #710d0f;
+      opacity: 0.4;
+      bottom: -10px; }
+  footer#contact .selectize-dropdown-content {
+    font-size: 16px; }
+    footer#contact .selectize-dropdown-content .active, footer#contact .selectize-dropdown-content .item:hover {
+      background: gray;
+      color: white; }
+  footer#contact .selectize-control.single .selectize-input, footer#contact .selectize-control input {
+    font-size: 16px; }
 
 .scroll {
   background-color: #382d51 !important;

@@ -9,9 +9,11 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<title>New page</title>
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="./assets/img/favicon.ico">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway|Roboto|Sacramento" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- build:css -->
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<!-- endbuild -->
@@ -21,7 +23,7 @@
 
 <body>
 	<header>
-		<nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
+		<nav id="navbar" onscroll="" class="navbar navbar-dark navbar-expand-lg">
 			<div class="container">
 				<a class="navbar-brand" href="#"><img  class="img-fluid" src="/assets/img/bmr-logo-darkbg.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +35,7 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     </li>
                                         <li class="nav-item">
                     <a class="nav-link" href="">Events</a>
@@ -56,13 +58,14 @@
       <div class="container">
         <h1>BabyMomma Rachel</h1>
         <h3 class="" >Radical Nutrition Justice</h3>
-        <h2 class="h3" >Author of <span><em>My Food Stamps Cookbook </em></span><button class="btn btn-info">Learn more!</button></h2>
+        <h2 class="h3" >Author of <span><em>My Food Stamps Cookbook </em></span><a href="#book-desc"><button class="btn btn-info">Learn more!</button></a></h2>
       </div>
     </div>
 
     <!-- book sales -->
     <div id="book-sales" class="container-fluid mb-4">
-      <div id="book-sales-header">
+      <div id="book-sales-header" class="d-flex flex-lg-row justify-content-lg-center ">
+        <div class="pt-lg-5 px-lg-2">
           <h2 class="h1"><span id="mfs-title">My Food Stamps</span> Cookbook</h2>
           <p class="h2">EBT-Priced Radical Nutrition</p>
           <div id="fruit-line" class="d-flex flex-row">
@@ -76,29 +79,41 @@
             <div id="cta-book-btn" class="container mx-auto">
               <a class="btn" href="#">Grab my copy<br>for $10 <span>today</span>!</a>
             </div>
-
+            </div>
+            <div class="px-lg-2">
         <a href="https://www.amazon.com/dp/B078RRR8HM" target="_blank"><img class="img-fluid" src="./assets/img/foodStampsCoverHighRes.jpg" ></a>
     </div>
+      </div>
+      <div class="d-flex flex-lg-row justify-content-lg-center">
+        <div class="px-lg-5">
         <h3 class="h5 mb-0">Poverty doesn't have to kill you!</h3>
-        <p class="">This cookbook will help you use food (stamps) to heal! Rachel is a Harvard-educated baby momma leading a revolution for low income, high potential communities to eat BETTER so they can LIVE better. She takes extra special care of her fellow baby
+        <p id="book-desc" class="">This cookbook will help you use food (stamps) to heal! Rachel is a Harvard-educated baby momma leading a revolution for low income, high potential communities to eat BETTER so they can LIVE better. She takes extra special care of her fellow baby
           mommas so the next generation can have happy and healthy habits passed down to them. Rachel overcame the welfare system with radical nutrition and you can, too!</p>
         <a class="btn btn-outline-info btn-sm mb-2" href="https://www.thepennyhoarder.com/food/food-stamp-budget-cookbook/" target="_blank">Learn more about the story behind my cookbook!</a>
+        </div><div class="px-lg-5">
         <h3 class="h5 mb-0">Some love from my readers</h3>
         <p class="m-b-0">"I would highly recommend this book to anyone looking for wonderful healthy food on a budget, food stamps or not! Rachel shares with us a wealth of information regarding how to avoid foods that will zap your budget and your health. Her butternut
             squash mac&amp;cheese is to die for..."</p>
         <p class="m-b-0">"Every Recipe in this book is healthy, tasty and affordable."</p>
         <p class="m-b-0">"I am a professional chef and I can’t stand cookbooks that are all slick pictures and no substance. This book is a welcome relief! I am constantly asked how to eat better, and the journey really is complex and unique for each individual..."</p>
-      <a id="amazon-link" class="btn btn-outline-primary mx-auto" href="#" target="_blank">Read a sample on Amazon -></a>
+      </div>
     </div>
+    <div class="d-flex align-self-center pb-2">
+      <a id="amazon-link" class="btn btn-outline-primary mx-auto" href="https://read.amazon.com/kp/embed?asin=B078RRR8HM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_fREkBbCAE15HC" target="_blank">Read a sample on Amazon <i class="fa fa-arrow-right"></i></a>
+    </div>
+    </div>
+
+
+    <!-- VIP list -->
         <div id="email-capture" class="container-fluid bg-warning py-3">
       <div class="row">
-        <div class="col-md-7 pt-3">
+        <div class="col-md-7 pt-3 px-lg-5">
           <h2 class="h1 text-uppercase text-light mb-2">Get on my VIP list!</h2>
           <p class="text-light"><span class="lead"><em>Be the first to know </em></span> about radical nutrition budget breakthroughs and my events, and get my FREE eat to heal anxiety guide right to your inbox!</p>
         </div>
                 <!-- Mailchimp integration -->
 
-        <div id="mc_embed_signup" class="col-md-5">
+        <div id="mc_embed_signup" class="col-md-5 pt-md-5 px-lg-5">
           <form action="https://hipdhamma.us4.list-manage.com/subscribe/post?u=9a32ff42332c6bebf4b03013f&amp;id=cca072786f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll" class="input-group border-white">
               <label for="mce-EMAIL"></label>
@@ -114,13 +129,13 @@
       </div>
     </div>
            <!-- Events Calendar https://app.eventscalendar.co -->
-   <div id="events" class="container-fluid py-5">
+   <div id="events" class="container py-5">
       <h3 class=""> I'm cooking up some <span id="event-emphasis">amazing</span> events for you!
       </h3>
       <p class="lead">Check back often to see what's going on!</p>
-    </div>
-  <div class="app-placeholder-calendar" data-id="proj_koi3Meflami80Sp7hLa3t"></div>
 
+  <div class="app-placeholder-calendar px-lg-5" data-id="proj_koi3Meflami80Sp7hLa3t"></div>
+   </div>
 
   <!-- About Block -->
 
@@ -153,8 +168,8 @@
 
     <!-- Begin Instagram Feed -->
 <div id="ig-feed" class="container-fluid">
- <div class="powr-social-feed d-flex" id="63f1bda4_1530846221"></div>
- <div class="container bg-light px-5 d-flex flex-nowrap">
+ <div class="powr-social-feed" id="63f1bda4_1530846221"></div>
+ <div class="container bg-light px-sm-5 d-flex flex-nowrap justify-content-md-center">
    <div><p class="">Follow me on <span>Instagram!</span></p></div>
    <div class=""><a href="https://www.instagram.com/babymommarachel/?hl=en" target="_blank"><img class="img-fluid d-flex align-self-center" src="./assets/img/glyph-logo_May2016.png"></a></div>
 </div>
@@ -164,8 +179,8 @@
 <!-- begin press info -->
 <div id="press" class="py-3">
     <div class="container">
-        <div class="row align-items-center mb-5">
-            <div class="col-sm-6"> <span class="d-block">What people saying about the</span>
+        <div class="row align-items-center mb-5 pl-md-5">
+            <div class="col-sm-6 pt-md-5"> <span class="d-block">What people saying about the</span>
                 <h2 class="h1 pt-3"><span class="line">BabyMomma<span class="line">Rachel Brand</span></h2>
             </div>
         </div>
@@ -210,7 +225,7 @@
         </div>
         <div id="partnerships">
           <!--need png for underline -->
-        <h4 class="h2 text-light pl-4">I've partnered with some <span>brilliant</span> people</h4>
+        <h4 class="h2 text-light pl-sm-4 mx-md-5">I've partnered with some <span>brilliant</span> people</h4>
 
 <div class="main-slider">
 
@@ -255,40 +270,67 @@
 
   <!-- footer -->
 
-  <footer id="contact" class="">
+  <footer id="contact">
     <div class="container">
 
         <!-- Footer About -->
-        <div class="mb-4"> <a class="d-block" href="index.html"> <img class="img-fluid" src="./assets/img/bmr-logo-darkbg.png" alt="Logo"></a>
-        <h1 class="h5">**BabyMomma Rachel</h1>
-          <div class="d-flex">
-            <a href="#">
-            <img src="./assets/img/social/instagram.png" height="100%"/></a>
-            <a href="#">
-            <img src="./assets/img/social/facebook.png" height="100%"/></a>
-            <a href="#">
-            <img src="./assets/img/social/twitter.png" height="100%"/></a>
+        <div class="mb-4"> <a class="d-block" href="index.html"> <img class="logo img-fluid" src="./assets/img/bmr-logo-darkbg.png" alt="Logo"></a>
+        <h1 class="h4 pl-md-3">** BabyMomma Rachel**</h1>
+          <div class="d-flex flex-row justify-content-sm-end justify-content-md-start pl-md-3">
+            <a href="https://www.instagram.com/babymommarachel/?hl=en" target="_blank">
+            <img class="img-fluid" src="./assets/img/social/instagram.png" height="100%"/></a>
+            <a href="https://twitter.com/babymommarachel?lang=en" target="_blank">
+            <img class="img-fluid" src="./assets/img/social/facebook.png" height="100%"/></a>
+            <a href="https://www.facebook.com/BabyMommaRachel/" target="_blank">
+            <img class="img-fluid" src="./assets/img/social/twitter.png" height="100%"/></a>
           </div>
         </div>
         <!-- End Footer About -->
 
         <!-- Contact Form -->
-        <div class="col-lg-7 g-mb-50">
-          <div class="g-brd-around g-brd-white-opacity-0_6 px-4 py-4">
+        <div id="footer-form" class="mb-5">
+          <div class="border border-light rounded px-4 py-4">
             <div class="row">
-              <div class="col-md-4 g-mb-30">
-                <h2 class="h1 g-color-white">Contact Us</h2>
+              <div class="col-sm mb-3">
+                <h2 class="h1 text-light">Drop me a note!</h2>
               </div>
 
-              <div class="col-md-8 g-mb-30">
-                <!-- Contact Form -->
+               <!-- div class="col-sm mb-3">
+                 -- Contact Form --
                 <div id="inbound-wrapper" data-path="https://app.99inbound.com/api/forms/390" data-token="GB81yfphAbIMerLlJ3fFMwtt"></div>
-              </div>
-            </div>
-          </div>
+              </div -->
 
+
+    <form class="callback enters">
+  <input id="callback_name" type="text" name="name" class="form-control py-1" placeholder="My name *" required="required">
+
+  <input id="form_email" type="email" name="email" class="form-control py-1" placeholder="My best email *" required="required">
+
+<textarea id="message-text"  type="text" name="message-text" class="form-control" rows="3" placeholder="What's on my mind?"></textarea>
+
+  <div class="alert alert-danger hidden">
+    Please, fill in form fields and push the button «Send»
+  </div>
+  <div class="alert alert-warning hidden">
+    Confirm that you are not a robot
+  </div>
+	<div class="form-group bot">
+	    <p>
+        <i class="fa fa-circle-o ring"></i>
+        <span>Im not a bot</span>
+      </p>
+  </div>
+  <div class="success">
+    <span>Awesome! Your message is sending now. Thanks!</span>
+  </div>
+	<button class="button submit">send my message</button>
+</form>
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
+
+
     <!-- End Contact Form -->
 
     <!-- Copyright -->
@@ -298,15 +340,6 @@
     </div>
     <!-- End Copyright -->
     <!-- Return to Top -->
-    <div>
-
-      <a class="js-go-to u-go-to-v1 animated js-animation-was-fired zoomIn" href="#!" data-type="fixed" data-position="{
-     &quot;bottom&quot;: 15,
-     &quot;right&quot;: 15
-   }" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn" style="display: inline-block; position: fixed; bottom: 15px; right: 15px;">
-      <i class="hs-icon hs-icon-arrow-top"></i>
-    </a>
-    </div>
   </footer>
 
 
@@ -320,17 +353,6 @@
 
 <!-- END MAIN -->
 
-  <!--script type="text/javascript">
-    window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
-};
-  </script-->
-     <!-- Events calendar -->
-  <!--script type="text/javascript">
-    document.getElementById("Inffuse-Loader") ||
-      document.write('\x3Cscript type="text/javascript" src="https://inffuse-platform.appspot.com/plugins/web/loader.js?app=calendar" id="Inffuse-Loader">\x3C/script>');
-  </script-->
    <!-- build:js -->
     <script src="./assets/js/main.js"></script>
      <!-- endbuild -->

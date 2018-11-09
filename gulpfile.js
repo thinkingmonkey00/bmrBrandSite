@@ -19,9 +19,10 @@ gulp.task("concatScripts", function() {
         'assets/js/vendor/bootstrap.min.js',
         'assets/js/vendor/jquery.fancybox.min.js',
         'assets/js/vendor/slick.js',
-        //'assets/js/custom/on-scroll.js',
+        'assets/js/custom/on-scroll.js',
         'assets/js/custom/events-calendar.js',
-        'assets/js/custom/fancybox-slick.js'
+        'assets/js/custom/fancybox-slick.js',
+        'assets/js/custom/contact-form-footer.js'
         ])
     .pipe(maps.init())
     .pipe(concat('main.js'))
