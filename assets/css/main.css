@@ -10454,7 +10454,7 @@ div#about {
 div#ig-feed.container-fluid {
   position: relative; }
   div#ig-feed.container-fluid div.container.bg-light {
-    height: 5rem;
+    height: 5.5rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -10481,14 +10481,19 @@ div#press {
     color: #EBEEE4;
     font-family: "Permanent Marker", cursive; }
   div#press span.line {
-    display: inline-block; }
+    display: inline-block;
+    white-space: nowrap; }
+  div#press ul#press-links .list-group-item {
+    background-color: rgba(0, 0, 0, 0.2); }
+    div#press ul#press-links .list-group-item a {
+      color: #8DAC3F; }
   div#press div#partnerships h4.h2 {
     padding: 2rem 0;
     font-family: "Raleway", sans-serif;
     font-variant: small-caps; }
     div#press div#partnerships h4.h2 span {
       font-family: "Permanent Marker", cursive;
-      font-variant: none;
+      font-variant: normal;
       color: #7c9959;
       text-decoration: underline; }
   div#press div#partnerships div.main-slider {

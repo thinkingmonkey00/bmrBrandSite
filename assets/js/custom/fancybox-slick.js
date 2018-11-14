@@ -19,7 +19,7 @@ $(".main-slider").slick({
   responsive: [{
     breakpoint: 475,
     settings: {
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1
     }
   }]

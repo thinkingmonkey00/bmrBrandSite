@@ -174,7 +174,7 @@ div#about {
 div#ig-feed.container-fluid {
   position: relative;
   div.container.bg-light {
-    height: 5rem;
+    height: 5.5rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -210,7 +210,18 @@ div#press {
   }
   span.line {
   display: inline-block;
+  white-space: nowrap;
 }
+
+ul#press-links {
+  .list-group-item {
+    background-color: rgba(0,0,0,0.2);
+    a {
+    color: $sushi-green;
+    }
+  }
+}
+
 div#partnerships {
   h4.h2 {
     padding: 2rem 0;
@@ -218,7 +229,7 @@ div#partnerships {
     font-variant: small-caps;
     span {
       font-family: $permanent-marker;
-      font-variant: none;
+      font-variant: normal;
       color: $success;
       text-decoration: underline;
     }
