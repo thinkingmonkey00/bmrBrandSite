@@ -10325,6 +10325,8 @@ div#book-sales.container-fluid div#cta-book-btn.container {
     div#book-sales.container-fluid div#cta-book-btn.container a span {
       -webkit-text-decoration: underline #8DAC3F;
               text-decoration: underline #8DAC3F; }
+    div#book-sales.container-fluid div#cta-book-btn.container a .btn::hover {
+      color: #EBEEE4; }
 
 @-webkit-keyframes top {
   from {

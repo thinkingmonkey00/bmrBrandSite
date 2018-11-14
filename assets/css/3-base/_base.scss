@@ -100,8 +100,11 @@ a {
 	text-decoration: none;
 	font-weight: 700;
   span {
-    text-decoration: underline $info
+    text-decoration: underline $info;
   }
+  .btn::hover {
+      color: $light;
+    }
 }
 @keyframes top{
 	from{
