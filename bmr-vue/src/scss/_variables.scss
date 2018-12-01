@@ -1,0 +1,73 @@
+// Palette
+$mandy: #eb656d;
+$martinique: #382d51;
+$asparagus: #7c9959;
+$tree-poppy: #f98921;
+$pomegranate: #f44336;
+$cannon-pink: #7d4475;
+$green-white: #ebeee4;
+$sushi-green: #8dac3f;
+
+$primary: $mandy;
+$primary-invert: findColorInvert($primary);
+$secondary: $cannon-pink;
+$secondary-invert: findColorInvert($secondary);
+$success: $asparagus;
+$success-invert: findColorInvert($success);
+$info: $sushi-green;
+$info-invert: findColorInvert($info);
+$warning: $tree-poppy;
+$warning-invert: findColorInvert($warning);
+$danger: $pomegranate;
+$danger-invert: findColorInvert($danger);
+$light: $green-white;
+$light-invert: findColorInvert($light);
+$dark: $martinique;
+$dark-invert: findColorInvert($dark);
+
+$colors: (
+  "white": (
+    $white,
+    $black
+  ),
+  "black": (
+    $black,
+    $white
+  ),
+  "light": (
+    $light,
+    $light-invert
+  ),
+  "dark": (
+    $dark,
+    $dark-invert
+  ),
+  "primary": (
+    $primary,
+    $primary-invert
+  ),
+  "secondary": (
+    $secondary,
+    $secondary-invert
+  ),
+  "info": (
+    $info,
+    $info-invert
+  ),
+  "success": (
+    $success,
+    $success-invert
+  ),
+  "warning": (
+    $warning,
+    $warning-invert
+  ),
+  "danger": (
+    $danger,
+    $danger-invert
+  )
+);
+// Links
+$link: $info;
+
+// Fonts
