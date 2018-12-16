@@ -10393,7 +10393,7 @@ div#book-sales.container-fluid div#cta-book-btn.container {
       -webkit-animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
               animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate; }
     div#book-sales.container-fluid div#cta-book-btn.container .btn:hover {
-      color: white; }
+      color: #fff; }
       div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::before, div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::after {
         top: 0;
         height: 100%;

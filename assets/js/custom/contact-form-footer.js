@@ -40,7 +40,7 @@ $('form.callback').on('submit',function(){
     else{ var th = $(this);
           $.ajax({
             type: "POST",
-            url: "/mail.php", //Change
+            url: "https://app.99inbound.com/api/e/HkooVyw9", //Change
             data: th.serialize()
             }).done(function() {
             $('.alert').addClass('hidden');

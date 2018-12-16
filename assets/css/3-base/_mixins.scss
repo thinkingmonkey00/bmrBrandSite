@@ -37,7 +37,7 @@
 			animation: bottom 2s $cubic-bezier 0.5s infinite alternate;
 		}
 		&:hover {
-			color: white;
+			color: #fff;
 			&::before,
 			&::after {
 				top: 0;
