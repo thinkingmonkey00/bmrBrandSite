@@ -27,7 +27,7 @@
 		&::before {
 			background-color: $backgroundColor;
 			top: 1rem;
-			left: -1.25rem;
+			left: -1.125rem;
 			animation: top 2s $cubic-bezier 0.25s infinite alternate;
 		}
 		&::after {
@@ -36,24 +36,28 @@
 			left: 13rem;
 			animation: bottom 2s $cubic-bezier 0.5s infinite alternate;
 		}
+
+/*
 		&:hover {
-			color: #fff;
+    //color: #fff;
 			&::before,
 			&::after {
-				top: 0;
+				top: -5px;
 				//transform: skewx(-10deg);
 				height: 100%;
-				width: 100%;
-				border-radius: 0;
-				animation: none;
+				width: 120%;
+				border-radius: 5px;
+				animation:none;
+
 			}
 			&::after {
-				left: 0rem;
+				left: -1rem;
 			}
 			&::before {
 				top: 0.5rem;
-				left: 0.35rem;
+				left: -0.5rem;
 			}
 		}
+*/
 	}
 }
