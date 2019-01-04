@@ -10509,7 +10509,8 @@ div#press {
         color: #7c9959;
         text-decoration: underline; }
     div#press div#partnerships div.main-slider {
-      padding-bottom: 5rem; }
+      padding-bottom: 5rem;
+      padding-left: 3rem; }
       div#press div#partnerships div.main-slider a#ywfc img {
         background: rgba(255, 255, 255, 0.25); }
 
