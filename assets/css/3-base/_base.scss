@@ -95,17 +95,16 @@ div#book-sales.container-fluid {
       padding-bottom: 2rem;
 
 
-a {
+a.btn {
 	//text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 700;
   span {
     text-decoration: underline $info;
   }
-  .btn::hover {
-      color: $light;
-    }
 }
+
+//bouncing balls
 @keyframes top{
 	from{
 		transform: translate(0rem, 0);
@@ -226,6 +225,9 @@ ul#press-links {
 }
 
 div#partnerships {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.125);
+  border-radius: 5px;
   h4.h2 {
     padding: 2rem 0;
     font-family: $raleway;
@@ -239,6 +241,12 @@ div#partnerships {
   }
   div.main-slider {
     padding-bottom: 5rem;
+    padding-left: 3rem;
+  a#ywfc {
+    img {
+      background: rgba(255, 255, 255, 0.25)
+    }
+  }
   }
 }
 }

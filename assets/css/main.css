@@ -10245,7 +10245,7 @@ body {
   background: #EBEEE4; }
 
 div#bmr-jumbo.container-fluid {
-  background-image: url("../img/rachel-hero.png"), linear-gradient(160deg, #FCCF31 15%, #F55555 30%, #F97794 60%, #623AA2 100%);
+  background-image: url("../img/rachel-hero.png"), linear-gradient(160deg, #FCCF31 15%, #F97794 60%, #623AA2 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -10319,14 +10319,12 @@ div#book-sales.container-fluid img.img-fluid {
 div#book-sales.container-fluid div#cta-book-btn.container {
   width: auto;
   padding-bottom: 2rem; }
-  div#book-sales.container-fluid div#cta-book-btn.container a {
+  div#book-sales.container-fluid div#cta-book-btn.container a.btn {
     text-decoration: none;
     font-weight: 700; }
-    div#book-sales.container-fluid div#cta-book-btn.container a span {
+    div#book-sales.container-fluid div#cta-book-btn.container a.btn span {
       -webkit-text-decoration: underline #8DAC3F;
               text-decoration: underline #8DAC3F; }
-    div#book-sales.container-fluid div#cta-book-btn.container a .btn::hover {
-      color: #EBEEE4; }
 
 @-webkit-keyframes top {
   from {
@@ -10370,7 +10368,29 @@ div#book-sales.container-fluid div#cta-book-btn.container {
     color: #f44336;
     font-family: "Raleway", sans-serif;
     -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s; }
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+    /*
+		&:hover {
+    //color: #fff;
+			&::before,
+			&::after {
+				top: -5px;
+				//transform: skewx(-10deg);
+				height: 100%;
+				width: 120%;
+				border-radius: 5px;
+				animation:none;
+
+			}
+			&::after {
+				left: -1rem;
+			}
+			&::before {
+				top: 0.5rem;
+				left: -0.5rem;
+			}
+		}
+*/ }
     div#book-sales.container-fluid div#cta-book-btn.container .btn::after, div#book-sales.container-fluid div#cta-book-btn.container .btn::before {
       content: "";
       position: absolute;
@@ -10383,7 +10403,7 @@ div#book-sales.container-fluid div#cta-book-btn.container {
     div#book-sales.container-fluid div#cta-book-btn.container .btn::before {
       background-color: #8DAC3F;
       top: 1rem;
-      left: -1.25rem;
+      left: -1.125rem;
       -webkit-animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
               animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate; }
     div#book-sales.container-fluid div#cta-book-btn.container .btn::after {
@@ -10392,20 +10412,6 @@ div#book-sales.container-fluid div#cta-book-btn.container {
       left: 13rem;
       -webkit-animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
               animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate; }
-    div#book-sales.container-fluid div#cta-book-btn.container .btn:hover {
-      color: white; }
-      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::before, div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::after {
-        top: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 0;
-        -webkit-animation: none;
-                animation: none; }
-      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::after {
-        left: 0rem; }
-      div#book-sales.container-fluid div#cta-book-btn.container .btn:hover::before {
-        top: 0.5rem;
-        left: 0.35rem; }
 
 div#email-capture h2.h1 {
   -webkit-text-decoration: underline #8DAC3F;
@@ -10489,17 +10495,24 @@ div#press {
     background-color: rgba(0, 0, 0, 0.2); }
     div#press ul#press-links .list-group-item a {
       color: #8DAC3F; }
-  div#press div#partnerships h4.h2 {
-    padding: 2rem 0;
-    font-family: "Raleway", sans-serif;
-    font-variant: small-caps; }
-    div#press div#partnerships h4.h2 span {
-      font-family: "Permanent Marker", cursive;
-      font-variant: normal;
-      color: #7c9959;
-      text-decoration: underline; }
-  div#press div#partnerships div.main-slider {
-    padding-bottom: 5rem; }
+  div#press div#partnerships {
+    margin-top: 3rem;
+    background: rgba(255, 255, 255, 0.125);
+    border-radius: 5px; }
+    div#press div#partnerships h4.h2 {
+      padding: 2rem 0;
+      font-family: "Raleway", sans-serif;
+      font-variant: small-caps; }
+      div#press div#partnerships h4.h2 span {
+        font-family: "Permanent Marker", cursive;
+        font-variant: normal;
+        color: #7c9959;
+        text-decoration: underline; }
+    div#press div#partnerships div.main-slider {
+      padding-bottom: 5rem;
+      padding-left: 3rem; }
+      div#press div#partnerships div.main-slider a#ywfc img {
+        background: rgba(255, 255, 255, 0.25); }
 
 footer#contact {
   background-color: #382d51;
