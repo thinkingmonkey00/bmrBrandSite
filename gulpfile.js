@@ -1,101 +1,34 @@
-"use strict";
+var gulp = require('gulp');
+var path = require('path');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
+var open = require('gulp-open');
 
-var gulp = require('gulp'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    maps = require('gulp-sourcemaps'),
-     del = require('del'),
-     autoprefixer = require('gulp-autoprefixer'),
-     browserSync = require('browser-sync').create(),
-     htmlreplace = require('gulp-html-replace'),
-     cssmin = require('gulp-cssmin');
+var Paths = {
+  HERE: './',
+  DIST: 'dist/',
+  CSS: './assets/css/',
+  SCSS_TOOLKIT_SOURCES: './assets/scss/material-kit.scss',
+  SCSS: './assets/scss/**/**'
+};
 
-gulp.task("concatScripts", function() {
-    return gulp.src([
-        'assets/js/vendor/jquery.min.js',
-        'assets/js/vendor/popper.min.js',
-        'assets/js/vendor/bootstrap.min.js',
-        'assets/js/vendor/jquery.fancybox.min.js',
-        'assets/js/vendor/slick.js',
-        'assets/js/custom/on-scroll.js',
-        'assets/js/custom/events-calendar.js',
-        'assets/js/custom/fancybox-slick.js',
-        'assets/js/custom/contact-form-footer.js'
-        ])
-    .pipe(maps.init())
-    .pipe(concat('main.js'))
-    .pipe(maps.write('./'))
-    .pipe(gulp.dest('assets/js'))
-    .pipe(browserSync.stream());
+gulp.task('compile-scss', function() {
+  return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write(Paths.HERE))
+    .pipe(gulp.dest(Paths.CSS));
 });
 
-gulp.task("minifyScripts", ["concatScripts"], function() {
-  return gulp.src("assets/js/main.js")
-    .pipe(uglify())
-    .pipe(rename('main.min.js'))
-    .pipe(gulp.dest('docs/assets/js'));
+gulp.task('watch', function() {
+  gulp.watch(Paths.SCSS, ['compile-scss']);
 });
 
-gulp.task('compileSass', function() {
-  return gulp.src("assets/css/main.scss")
-      .pipe(maps.init())
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer())
-      .pipe(maps.write('./'))
-      .pipe(gulp.dest('assets/css'))
-      .pipe(browserSync.stream());
+gulp.task('open', function() {
+  gulp.src('index.html')
+    .pipe(open());
 });
 
-gulp.task("minifyCss", ["compileSass"], function() {
-  return gulp.src("assets/css/main.css")
-    .pipe(cssmin())
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('docs/assets/css'));
-});
-
-gulp.task('watchFiles', function() {
-  gulp.watch('assets/css/**/*.scss', ['compileSass']);
-  gulp.watch('assets/js/*.js', ['concatScripts']);
-})
-
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
-
-gulp.task('clean', function() {
-  del(['docs', 'assets/css/main.css*', 'assets/js/main*.js*']);
-});
-
-gulp.task('renameSources', function() {
-  return gulp.src('*.html')
-    .pipe(htmlreplace({
-        'js': 'assets/js/main.min.js',
-        'css': 'assets/css/main.min.css'
-    }))
-    .pipe(gulp.dest('docs/'));
-});
-
-gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
-  return gulp.src(['*.html', '*.php','*.css','favicon.ico',
-                   "assets/img/**","assets/fonts/**"], { base: './'})
-            .pipe(gulp.dest('docs'));
-});
-
-gulp.task('serve', ['watchFiles'], function(){
-  browserSync.init({
-        server: "./"
-    });
-
-    gulp.watch("assets/css/**/*.scss", ['watchFiles']);
-    gulp.watch("*.html").on('change', browserSync.reload);
-});
-
-gulp.task("default", ["clean", 'build'], function() {
-  gulp.start('renameSources');
-});
+gulp.task('open-app', ['open', 'watch']);
