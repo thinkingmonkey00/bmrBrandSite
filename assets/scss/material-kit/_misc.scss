@@ -1,3 +1,32 @@
+// Vars
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Kristi');
+$kristi: 'Kristi', cursive;
+.kristi {
+  font-family: $kristi;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+$merriweather: 'Merriweather', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+$merriweatherSans: 'Merriweather Sans', sans-serif;
+.small-caps {
+  font-variant: small-caps;
+}
+// BMR Variables
+$twilight: #7d4475;
+$tuscany: #bcaa99;
+$gold: #c89933;
+$palmLeaf: #819d3a;
+$lapis: #166a9c;
+
+$primary: $twilight;
+$secondary: $tuscany;
+$success: $palmLeaf;
+$info: $lapis;
+$warning: $gold;
+
 body {
   background-color: #eee;
   color: $black-color;
@@ -153,6 +182,7 @@ label {
       color: $white-color;
     }
     font-family: 'Kristi', cursive;
+    color: $primary;
   }
 }
 
@@ -552,3 +582,18 @@ label {
     }
   }
 }
+
+// hidden elements
+.container.bg-white.justify-content-center.coverit {
+  height: 100px;
+  padding-top: -1000px;
+}
+
+/* <div class="container bg-white justify-content-center coverit">
+              <p class="">Follow me on <span>Instagram!</span></p>
+              <a
+                href="https://www.instagram.com/babymommarachel/?hl=en"
+                target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div> */

@@ -30,7 +30,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand kristi" href="index.html"
-          >Rachel Bolden-Kramer</a>
+          >Rachel Bolden-Kramer</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -64,7 +65,7 @@
               <a class="nav-link" href="">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.amazon.com/dp/B078RRR8HM"
+              <a class="nav-link" href="https://amzn.to/2GSxCfX"
                 >Buy my book!</a
               >
             </li>
@@ -98,7 +99,7 @@
               id="book-sales-header"
               class="d-flex flex-lg-row justify-content-lg-center "
             >
-              <div class="">
+              <div>
                 <h2>My Food Stamps<br />Cookbook</h2>
                 <p class="h3">EBT-Priced Radical Nutrition</p>
                 <div id="fruit-line" class="d-flex justify-content-center">
@@ -112,10 +113,11 @@
                 </p>
 
                 <div id="cta-book-btn" class="container mx-auto">
-                  <a class="btn" href="https://amzn.to/2GSxCfX"
+                  <a class="btn btn-warning" href="https://amzn.to/2GSxCfX"
                     >Grab your copy<br />for $10 <strong>today</strong>!</a
                   >
                 </div>
+                <img class="img-fluid" src="./assets/img/book-cta.png" />
               </div>
             </div>
             <div
@@ -175,7 +177,10 @@
     </div>
 
     <!-- VIP list -->
-    <div id="email-capture" class="container-fluid bg-warning py-3">
+    <div
+      id="email-capture"
+      class="mt-5 container-fluid bg-success text-light py-3"
+    >
       <div class="row">
         <div class="col-md-7 pt-3 px-lg-5">
           <h2 class="h1 text-uppercase">Get on my VIP list!</h2>
@@ -226,7 +231,7 @@
                   value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  class="btn btn-light rounded-0"
+                  class="btn btn-info rounded-0"
                 >
                   Sign me up!
                 </button>
@@ -237,17 +242,21 @@
       </div>
     </div>
     <!-- Events Calendar https://app.eventscalendar.co -->
-    <div id="events" class="container py-5">
-      <h3 class="">
-        I'm cooking up some <span id="event-emphasis">amazing</span> events for
-        you!
-      </h3>
-      <p class="lead">Check back often to see what's going on!</p>
+    <div class="my-5 main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h3 class="">
+            I'm cooking up some <span id="event-emphasis">amazing</span> events
+            for you!
+          </h3>
+          <p class="lead">Check back often to see what's going on!</p>
 
-      <div
-        class="app-placeholder-calendar px-lg-5"
-        data-id="proj_koi3Meflami80Sp7hLa3t"
-      ></div>
+          <div
+            class="app-placeholder-calendar px-lg-5"
+            data-id="proj_koi3Meflami80Sp7hLa3t"
+          ></div>
+        </div>
+      </div>
     </div>
     <!-- About Block -->
 
@@ -264,16 +273,16 @@
             </div>
             <div class="col-md-6 align-self-center py-2">
               <h2 class="h4 text-uppercase pb-2">Hi! I'm Rachel</h2>
-              <p class="lead mb-0">
-                <span class="font-weight-bold">Rachel Bolden-Kramer </span>is a
-                writer and babymomma revolutionary originally from San
-                Francisco’s Haight-Ashbury. She disturbed the status-quo as a
-                militant teenager and poetry slam champion in the 1990s. Rachel
-                credits the arts and activism movement of her generation in the
-                Bay Area for contributing to her keen sense of creative justice.
+              <p class="mb-0">
+                <span class="lead">Rachel Bolden-Kramer </span>is a writer and
+                babymomma revolutionary originally from San Francisco’s
+                Haight-Ashbury. She disturbed the status-quo as a militant
+                teenager and poetry slam champion in the 1990s. Rachel credits
+                the arts and activism movement of her generation in the Bay Area
+                for contributing to her keen sense of creative justice.
               </p>
               <button
-                class="btn btn-outline-light mr-1 mb-1"
+                class="btn btn-info mr-1 mb-1"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseAbout"
@@ -286,7 +295,7 @@
                 id="collapseAbout"
                 class="collapse lead mb-0 g-line-height-2"
               >
-                <div class="card card-body">
+                <div class="card card-body bg-info text-light">
                   Rachel is a first-generation graduate of Harvard University.
                   After a trauma, Rachel became an expert in navigating the
                   welfare system and referenced her strategies for survival at
@@ -306,26 +315,20 @@
     </div>
 
     <!-- Begin Instagram Feed -->
-    <div id="ig-feed" class="container">
+    <div id="ig-feed" class="container-fluid">
       <div class="powr-social-feed" id="63f1bda4_1530846221"></div>
-      <div class="container justify-content-center">
-        <p class="">Follow me on <span>Instagram!</span></p>
-
-        <a
-          href="https://www.instagram.com/babymommarachel/?hl=en"
-          target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
     </div>
 
     <!-- begin press info -->
     <div class="main main-raised">
       <div class="container">
         <div class="section text-center">
-          <h3>What people saying about the</h3>
+          <h4 class="text-left small-caps pl-3">
+            what people saying <br />about the
+          </h4>
           <h2 class="">
-            Baby Momma Rachel Brand
+            <span class="kristi">Baby Momma Rachel</span>
+            <span class="small small-caps">brand</span>
           </h2>
         </div>
       </div>
@@ -474,12 +477,16 @@
         </li>
       </ul>
 
-      <div id="partnerships" class="container">
-        <!--need png for underline -->
-        <h4 class="h2">
-          I've partnered with some <span>brilliant</span> people
-        </h4>
-
+      <div id="partnerships" class="container pt-5">
+        <div class="main main-raised bg-info text-light">
+          <div class="container">
+            <div class="section text-center">
+              <h4 class="h2 small-caps">
+                I've partnered with some <strong>brilliant</strong> people
+              </h4>
+            </div>
+          </div>
+        </div>
         <div class="main-slider">
           <a
             href="./assets/img/partnerships/child-care-links.png"
@@ -663,7 +670,7 @@
         <!-- Copyright -->
         <div class="container text-center g-py-30">
           <p class="g-font-size-13 mb-0">
-            &copy; 2018 HipDhamma. All Rights Reserved.
+            &copy; 2019 HipDhamma. All Rights Reserved.
           </p>
           <p class="g-font-size-13 mb-0">
             Crafted with care by Thoughtful Monkey Designs
