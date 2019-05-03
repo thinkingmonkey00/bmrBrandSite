@@ -91,7 +91,7 @@
       </div>
     </div>
     <div
-      class="page-header header-filter d-none d-xl-block"
+      class="page-header header-filter d-none d-lg-block"
       data-parallax="true"
       style="background-image: url('assets/img/bmr-header.jpg')"
     >
@@ -639,7 +639,7 @@
       <div class="container">
         <!-- Footer About -->
         <div class="">
-          <a class="d-block" href="index.html"> Rachel Bolden-Kramer</a>
+          <a class="d-block kristi" href="index.html"> Rachel Bolden-Kramer</a>
           <h1 class="h4 pl-md-3">** Baby Momma Rachel **</h1>
           <div class="d-flex justify-content-center">
             <a
@@ -674,12 +674,18 @@
               <div class="col-sm">
                 <h2 class="">Drop me a note!</h2>
               </div>
+              <div class="col">
 
-              <form id="contact" class="callback enters">
+              <script type="text/javascript">var submitted=false;</script>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+              onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+
+
+              <form id="contact" class="callback enters" action="https://docs.google.com/forms/d/e/1FAIpQLSf2JqayZyrTZGKh8uQwT2bg35gcBSZBungoMqdcB3h3c1m0LA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 <input
                   id="callback_name"
                   type="text"
-                  name="name"
+                  name="entry.1670151414"
                   class="form-control py-1"
                   placeholder="What's your name?"
                   required="required"
@@ -688,38 +694,41 @@
                 <input
                   id="form_email"
                   type="email"
-                  name="email"
+                  name="emailAddress"
+                  autocomplete="email"
                   class="form-control py-1"
                   placeholder="email *"
                   required="required"
                 />
 
+                
                 <textarea
                   id="message-text"
                   type="text"
-                  name="message-text"
+                  name="entry.285675730"
                   class="form-control"
                   rows="3"
                   placeholder="What's on your mind?"
                 ></textarea>
 
-                <div class="alert alert-danger hidden">
+                <div class="alert alert-danger d-none">
                   Please, fill in form fields and push the button «Send»
                 </div>
-                <div class="alert alert-warning hidden">
+                <div class="alert alert-warning d-none">
                   Confirm that you are not a robot
                 </div>
                 <div class="form-group bot">
                   <p>
-                    <i class="fa fa-circle-o ring"></i>
-                    <span>Im not a bot</span>
+                    <i class="fa fa-circle-o ring d-none"></i>
+                    <span class="d-none"Im not a bot</span>
                   </p>
                 </div>
-                <div class="success">
+                <div class="success d-none">
                   <span>Awesome! Your message is sending now. Thanks!</span>
                 </div>
-                <button class="button submit">send my message</button>
+                <button class="button submit">send me a message</button>
               </form>
+              </div>
             </div>
           </div>
         </div>
@@ -780,6 +789,7 @@
         });
       });
     </script>
+
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->

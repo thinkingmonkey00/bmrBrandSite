@@ -6452,18 +6452,6 @@ label {
 .card-collapse .card-header a i {
   transition: all 150ms ease 0s; }
 
-.signup-page .card-signup form .form-check {
-  padding-left: 20px; }
-  .signup-page .card-signup form .form-check .form-check-label {
-    padding-left: 35px; }
-
-.section-signup .card-signup .card-header {
-  width: auto; }
-
-.section-signup .card-signup .card-body .input-group {
-  padding-bottom: 7px;
-  margin: 27px 0 0 0; }
-
 .offline-doc .page-header,
 .offline-free-doc .page-header {
   height: 100vh !important; }
@@ -6503,6 +6491,9 @@ label {
   .offline-free-doc .navbar .navbar-brand,
   .offline-free-doc .navbar .navbar-collapse .nav-link {
     color: #fff; }
+
+a.d-block.kristi {
+  font-size: 2.5rem; }
 
 @-webkit-keyframes hinge {
   0% {
@@ -8123,18 +8114,6 @@ label {
 .card-collapse .card-header a i {
   transition: all 150ms ease 0s; }
 
-.signup-page .card-signup form .form-check {
-  padding-left: 20px; }
-  .signup-page .card-signup form .form-check .form-check-label {
-    padding-left: 35px; }
-
-.section-signup .card-signup .card-header {
-  width: auto; }
-
-.section-signup .card-signup .card-body .input-group {
-  padding-bottom: 7px;
-  margin: 27px 0 0 0; }
-
 .offline-doc .page-header,
 .offline-free-doc .page-header {
   height: 100vh !important; }
@@ -8174,6 +8153,9 @@ label {
   .offline-free-doc .navbar .navbar-brand,
   .offline-free-doc .navbar .navbar-collapse .nav-link {
     color: #fff; }
+
+a.d-block.kristi {
+  font-size: 2.5rem; }
 
 @-webkit-keyframes hinge {
   0% {
@@ -8564,7 +8546,7 @@ label {
         width: 0;
         color: #fff;
         height: 0;
-        box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+        box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
         -webkit-animation: checkbox-off 0.3s forwards;
         animation: checkbox-off 0.3s forwards; }
   .form-check .form-check-input:focus + .form-check-sign .check:after {
@@ -8573,7 +8555,7 @@ label {
     background: #9c27b0; }
   .form-check .form-check-input:checked + .form-check-sign .check:before {
     color: #FFFFFF;
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
     -webkit-animation: checkbox-on 0.3s forwards;
     animation: checkbox-on 0.3s forwards; }
   .form-check .form-check-input:checked + .form-check-sign:before {
@@ -8605,19 +8587,19 @@ label {
 
 @-webkit-keyframes checkbox-on {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
   50% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
   100% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
 
 @keyframes checkbox-on {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
   50% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
   100% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
 
 @-webkit-keyframes rippleOn {
   0% {
@@ -8679,9 +8661,9 @@ label {
       background: #f1f1f1;
       border-radius: 100%;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-      transition: left 0.2s ease-in, background-color 0.2s ease-in, -webkit-transform 0.3s ease;
-      transition: left 0.2s ease-in, background-color 0.2s ease-in, transform 0.3s ease;
-      transition: left 0.2s ease-in, background-color 0.2s ease-in, transform 0.3s ease, -webkit-transform 0.3s ease;
+      transition: left 0.2s ease-in, background-color 0.2s ease-in, -webkit-transform 0.3s ease;
+      transition: left 0.2s ease-in, background-color 0.2s ease-in, transform 0.3s ease;
+      transition: left 0.2s ease-in, background-color 0.2s ease-in, transform 0.3s ease, -webkit-transform 0.3s ease;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
     .switch label .bmd-switch-track:active::after {
@@ -8808,19 +8790,19 @@ label {
 
 @-webkit-keyframes checkboxOn {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
   50% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
   100% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
 
 @keyframes checkboxOn {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
   50% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
   100% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
 
 @keyframes rippleOn {
   0% {
