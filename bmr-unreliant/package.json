@@ -1,0 +1,48 @@
+{
+  "name": "bmr",
+  "version": "3.0",
+  "description": "Baby Momma Rachel, primary site",
+  "main": "index.html",
+  "directories": {
+    "example": "root"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/material-kit.git"
+  },
+  "keywords": [
+    "baby momma rachel",
+    "rachel bolden-kramer",
+    "radical food justice",
+    "thoughtful monkey designs",
+    "melissa murphy"
+  ],
+  "author": "Thoughtful Monkey Designs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melissa-murphy/bmrDev/issues"
+  },
+  "devDependencies": {},
+  "homepage": "https://babymommarachel.com",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.1",
+    "gulp": "^4.0.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.30.0",
+    "webpack-config": "^7.5.0",
+    "webpack-stream": "^5.2.1"
+  }
+}
