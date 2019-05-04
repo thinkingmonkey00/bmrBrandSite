@@ -111,36 +111,6 @@ label {
   @include transitions($fast-transition-time, $transition-ease);
 }
 
-.signup-page {
-  .card-signup {
-    form {
-      .form-check {
-        padding-left: 20px;
-
-        .form-check-label {
-          padding-left: 35px;
-        }
-      }
-    }
-  }
-}
-
-// style for index.html (free version)
-
-.section-signup {
-  .card-signup {
-    .card-header {
-      width: auto;
-    }
-    .card-body {
-      .input-group {
-        padding-bottom: 7px;
-        margin: 27px 0 0 0;
-      }
-    }
-  }
-}
-
 // offline-doc
 .offline-doc,
 .offline-free-doc {
@@ -185,6 +155,11 @@ label {
     color: $primary;
   }
 }
+
+a.d-block.kristi {
+  font-size: 2.5rem;
+}
+
 
 // hinge card
 
