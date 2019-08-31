@@ -1,5 +1,5 @@
 import React from "react"
-import {Gallery} from "gatsby-theme-gallery"
+import { Gallery } from "gatsby-theme-gallery"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 
@@ -47,6 +47,10 @@ class AboutSection extends React.Component {
     )
     const MainGallery = () => (
       <Card>
+        <h2 className={classes.centered}>
+          <span className={classes.title}>Baby Momma Rachel</span>{" "}
+          <span>Gallery</span>
+        </h2>
         <Gallery />
       </Card>
     )
