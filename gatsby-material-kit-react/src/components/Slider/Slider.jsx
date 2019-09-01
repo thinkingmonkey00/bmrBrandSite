@@ -20,12 +20,32 @@ import img11 from "../../assets/img/partnerships/young-womens-freedom-center.png
 class PartnerSlider extends React.Component {
   render() {
     var settings = {
-      autoplay: true,
-      dots: false,
+      centerMode: true,
+      centerPadding: "1rem",
       infinite: true,
-      speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 3,
+      slidesToScroll: 5,
+      autoplay: true,
+      speed: 1000,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // centerMode: false,
+            centerPadding: "0.5rem",
+          },
+        },
+      ],
     }
     return (
       <Slider {...settings}>
