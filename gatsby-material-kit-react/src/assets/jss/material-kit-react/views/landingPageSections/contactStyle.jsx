@@ -1,8 +1,8 @@
-import { title, primaryColor } from "assets/jss/material-kit-react.jsx"
+import { brandFont, primaryColor } from "assets/jss/material-kit-react.jsx"
 
 const contactStyle = {
-  nameSocial: {
-    ...title,
+  title: {
+    ...brandFont,
     color: primaryColor,
     textAlign: "center",
   },

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 // nodejs library that concatenates classes
 // import classNames from "classnames"
 // @material-ui/core components
@@ -12,13 +12,13 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import Button from "components/CustomButtons/Button.jsx"
-import CustomInput from "components/CustomInput/CustomInput.jsx";
+import CustomInput from "components/CustomInput/CustomInput.jsx"
 
 import moreInfoStyle from "assets/jss/material-kit-react/views/landingPageSections/moreInfoStyle.jsx"
 
-class MoreInfo extends React.Component {
+class MoreInfo extends Component {
   render() {
-    const {classes, ...rest} = this.props
+    const { classes, ...rest } = this.props
     return (
       <div className={classes.section} {...rest}>
         <GridContainer>
@@ -49,17 +49,17 @@ class MoreInfo extends React.Component {
                   className="input-group border-white"
                 >
                   <label htmlFor="mce-EMAIL" />
-                  <GridItem xs={12} >
-                  <CustomInput
-                    labelText="Your Email"
-                    id="mce-EMAIL"
-                    name="EMAIL"
-                    required
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
+                  <GridItem xs={12}>
+                    <CustomInput
+                      labelText="Your Email"
+                      id="mce-EMAIL"
+                      name="EMAIL"
+                      required
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                    />
+                  </GridItem>
                   <div className="input-group-append">
                     {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
                     <div
@@ -78,7 +78,7 @@ class MoreInfo extends React.Component {
                       value="Subscribe"
                       name="subscribe"
                       id="mc-embedded-subscribe"
-                     color="primary"
+                      color="primary"
                     >
                       Sign me up!
                     </Button>

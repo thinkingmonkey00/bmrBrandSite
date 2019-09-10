@@ -21,10 +21,10 @@ class PartnerSlider extends React.Component {
   render() {
     var settings = {
       centerMode: true,
-      centerPadding: "1rem",
+      centerPadding: "20px",
       infinite: true,
       slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToScroll: 1,
       autoplay: true,
       speed: 1000,
       cssEase: "linear",
@@ -33,7 +33,7 @@ class PartnerSlider extends React.Component {
           breakpoint: 800,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
           },
         },
         {
@@ -41,7 +41,6 @@ class PartnerSlider extends React.Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            // centerMode: false,
             centerPadding: "0.5rem",
           },
         },
@@ -50,58 +49,58 @@ class PartnerSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <a href="#" target="_blank">
-            <img src={img1} width="175px" alt="Child Care Links" />
+          <a href="https://behively.org/" target="_blank" rel="noopener noreferrer">
+            <img src={img1} width="175" alt="Child Care Links" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img2} width="175px" alt="Child Care Links" />
+          <a href="https://www.cityharvest.org/" target="_blank" rel="noopener noreferrer">
+            <img src={img2} width="175" alt="City Harvest" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img3} width="175px" alt="Child Care Links" />
+          <a href="http://www.first5alameda.org" target="_blank" rel="noopener noreferrer">
+            <img src={img3} width="175" alt="First 5" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img4} width="175px" alt="Child Care Links" />
+          <a href="https://food52.com/" target="_blank" rel="noopener noreferrer">
+            <img src={img4} width="175" alt="Food 52" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img5} width="175px" alt="Child Care Links" />
+          <a href="https://www.moadsf.org/" target="_blank" rel="noopener noreferrer">
+            <img src={img5} width="175" alt="Museum of the African Diaspora" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img6} width="175px" alt="Child Care Links" />
+          <a href="http://www.rootsoflaborbc.com" target="_blank" rel="noopener noreferrer">
+            <img src={img6} width="175" alt="Roots of Labor Birth Collective" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img7} width="175px" alt="Child Care Links" />
+          <a href="http://www.sfusd.edu" target="_blank" rel="noopener noreferrer">
+            <img src={img7} width="175" alt="San Francisco Unified School District" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img8} width="175px" alt="Child Care Links" />
+          <a href="http://www.oaklandisjuiced.com" target="_blank" rel="noopener noreferrer">
+            <img src={img8} width="175" alt="Super Juiced - Oakland" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img9} width="175px" alt="Child Care Links" />
+          <a href="https://www.umpquabank.com/corporate-responsibility/partnerships/" target="_blank" rel="noopener noreferrer">
+            <img src={img9} width="175" alt="Umpqua Bank - Community Spotlight" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img10} width="175px" alt="Child Care Links" />
+          <a href="https://unitedrootsoakland.org/" target="_blank" rel="noopener noreferrer">
+            <img src={img10} width="175" alt="United Roots" />
           </a>
         </div>
         <div>
-          <a href="#" target="_blank">
-            <img src={img11} width="175px" alt="Child Care Links" />
+          <a href="https://www.youngwomenfree.org/" target="_blank" rel="noopener noreferrer">
+            <img src={img11} width="175" alt="Young Women's Freedom Center" />
           </a>
         </div>
       </Slider>
@@ -111,106 +110,3 @@ class PartnerSlider extends React.Component {
 
 export default PartnerSlider
 
-{
-  /* <div className="main-slider">
-       
-                <a
-                  href="assets/img/partnerships/city-harvest.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/city-harvest.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/first-five.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/first-five.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/food-52.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/food-52.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/child-care-links.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/child-care-links.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/moad.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img src="assets/img/partnerships/moad.png" width="175px" />
-                </a>
-                <a
-                  href="assets/img/partnerships/roots-of-labor.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/roots-of-labor.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/sfusd.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/sfusd.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/super-juiced-oakland.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/super-juiced-oakland.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  href="assets/img/partnerships/umpqua-bank.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/umpqua-bank.png"
-                    width="175px"
-                  />
-                </a>
-                <a
-                  id="ywfc"
-                  href="assets/img/partnerships/young-womens-freedom-center.png"
-                  target="_blank"
-                  data-fancybox="images"
-                >
-                  <img
-                    src="assets/img/partnerships/young-womens-freedom-center.png"
-                    width="175px"
-                  />
-                </a>
-              </div> */
-}
