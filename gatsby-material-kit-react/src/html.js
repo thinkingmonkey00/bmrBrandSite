@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import * as emailjs from "emailjs-com"
 
 export default function HTML(props) {
   return (
@@ -16,9 +15,12 @@ export default function HTML(props) {
           type="text/javascript"
           src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
         ></script>
-        {/* <script type="text/javascript">
-          (function(){emailjs.init("user_1hwQkALRBnW0srlGqwXJk")})();
-        </script> */}
+        {/* Chimpmail Popup */}
+        <script
+          type="text/javascript"
+          src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+          data-dojo-config="usePlainJson: true, isDebug: false"
+        ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

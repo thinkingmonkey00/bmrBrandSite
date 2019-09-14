@@ -1,5 +1,6 @@
 import React from "react"
 import * as emailjs from "emailjs-com"
+// import Popup from "reactjs-popup"
 import useInput from "hooks/useInput"
 
 // core components
@@ -7,6 +8,7 @@ import Button from "components/CustomButtons/Button"
 import CustomInput from "components/CustomInput/CustomInput"
 import GridContainer from "components/Grid/GridContainer"
 import GridItem from "components/Grid/GridItem"
+// import Card from "components/Card/Card"
 
 const ContactForm = () => {
   const contactform = () => {
@@ -28,10 +30,12 @@ const ContactForm = () => {
           console.log(`Failed`, err)
         }
       )
+      
     }
     sendMessage()
+    
     // console.log(`checking for input` + inputs.name + `did they show?`)
-    alert(`Submitted: Name: ${inputs.name} Email: ${inputs.email} `)
+    alert(`Thank you for your message ${inputs.name}! I'll get back to you soon! `)
   }
   const labelTextName = "What is your name?"
   const labelTextEmail = "Email?"

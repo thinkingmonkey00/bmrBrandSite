@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "gatsby-material-kit-react/public",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
